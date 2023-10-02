@@ -1,0 +1,134 @@
+{
+  "_index": ".ds-metrics-system-process-2023.10.01-000001",
+  "_id": "-bQW8YoB3xyXgEzwpaDM",
+  "_version": 1,
+  "_seq_no": 8213,
+  "_primary_term": 2,
+  "found": true,
+  "_source": {
+    "host": {
+      "os": {
+        "family": "windows",
+        "kernel": "10.0.22621.2283 (WinBuild.160101.0800)",
+        "build": "22621.2283",
+        "platform": "windows",
+        "version": "10.0",
+        "type": "windows",
+        "name": "Windows 11 Home Single Language"
+      },
+      "architecture": "x86_64",
+      "hostname": "laptop-05cjhlka",
+      "id": "cb784770-cfd5-40fe-a2a2-61aea7024f5e",
+      "mac": [
+        "08-97-98-A2-EC-D1",
+        "A8-7E-EA-6E-7D-1E",
+        "A8-7E-EA-6E-7D-1F",
+        "A8-7E-EA-6E-7D-22",
+        "AA-7E-EA-6E-7D-1E"
+      ],
+      "ip": [
+        "fe80::5e07:3918:b4d1:dad9",
+        "169.254.153.121",
+        "fe80::1a69:91e8:ad77:b0c6",
+        "169.254.9.166",
+        "fe80::2a17:30d9:8976:b13f",
+        "169.254.73.46",
+        "fe80::130b:9437:cd07:5f80",
+        "192.168.0.102",
+        "fe80::e465:529:d88:2943",
+        "169.254.51.205"
+      ],
+      "name": "laptop-05cjhlka"
+    },
+    "event": {
+      "dataset": "system.process",
+      "duration": 75565700,
+      "module": "system"
+    },
+    "agent": {
+      "name": "LAPTOP-05CJHLKA",
+      "type": "metricbeat",
+      "version": "8.10.2",
+      "id": "5e0adb39-24d0-4607-95b2-4b6f41feb557",
+      "ephemeral_id": "17973a7a-68a9-4885-8052-bdfc02cb2e49"
+    },
+    "@version": "1",
+    "tags": [
+      "beats_input_raw_event"
+    ],
+    "service": {
+      "type": "system"
+    },
+    "process": {
+      "state": "running",
+      "memory": {
+        "pct": 0.0152
+      },
+      "parent": {
+        "pid": 24260
+      },
+      "command_line": """C:\Program Files\Google\Chrome\Application\chrome.exe --type=renderer --disable-nacl --origin-trial-disabled-features=WebGPU --lang=vi --device-scale-factor=1.25 --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=33 --time-ticks-at-unix-epoch=-1696090125203156 --launch-time-ticks=170766996450 --mojo-platform-channel-handle=7312 --field-trial-handle=1916,i,141409996342006115,13782534301122220680,262144 /prefetch:1""",
+      "cpu": {
+        "pct": 0.0059,
+        "start_time": "2023-10-02T15:34:58.675Z"
+      },
+      "pid": 6008,
+      "args": [
+        """C:\Program Files\Google\Chrome\Application\chrome.exe""",
+        "--type=renderer",
+        "--disable-nacl",
+        "--origin-trial-disabled-features=WebGPU",
+        "--lang=vi",
+        "--device-scale-factor=1.25",
+        "--num-raster-threads=4",
+        "--enable-main-frame-before-activation",
+        "--renderer-client-id=33",
+        "--time-ticks-at-unix-epoch=-1696090125203156",
+        "--launch-time-ticks=170766996450",
+        "--mojo-platform-channel-handle=7312",
+        "--field-trial-handle=1916,i,141409996342006115,13782534301122220680,262144",
+        "/prefetch:1"
+      ],
+      "name": "chrome.exe"
+    },
+    "user": {
+      "name": """LAPTOP-05CJHLKA\fpt"""
+    },
+    "metricset": {
+      "period": 10000,
+      "name": "process"
+    },
+    "ecs": {
+      "version": "8.0.0"
+    },
+    "system": {
+      "process": {
+        "cpu": {
+          "total": {
+            "pct": 0.0469,
+            "norm": {
+              "pct": 0.0059
+            },
+            "value": 19015
+          },
+          "start_time": "2023-10-02T15:34:58.675Z"
+        },
+        "state": "running",
+        "memory": {
+          "rss": {
+            "pct": 0.0152,
+            "bytes": 227880960
+          },
+          "size": 173355008
+        },
+        "cmdline": """C:\Program Files\Google\Chrome\Application\chrome.exe --type=renderer --disable-nacl --origin-trial-disabled-features=WebGPU --lang=vi --device-scale-factor=1.25 --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=33 --time-ticks-at-unix-epoch=-1696090125203156 --launch-time-ticks=170766996450 --mojo-platform-channel-handle=7312 --field-trial-handle=1916,i,141409996342006115,13782534301122220680,262144 /prefetch:1"""
+      }
+    },
+    "@timestamp": "2023-10-02T15:51:46.841Z",
+    "data_stream": {
+      "type": "metrics",
+      "dataset": "system",
+      "namespace": "process"
+    }
+  }
+}
